@@ -110,6 +110,7 @@ body {
 /*classe item formatando input*/
 
 .item input {
+    color: #fff;
     width: 50%;
     height: 5%;
     margin-bottom: 20px;
@@ -117,6 +118,10 @@ body {
     border: none;
     border-bottom: solid 1px #fff;
     background-color: transparent;
+}
+/*Tirando o contorno do meu input */
+input:focus {
+  outline: none;
 }
 
 .item ::placeholder {
