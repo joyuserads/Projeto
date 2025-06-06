@@ -1,23 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/header.css" />
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/header.css" />
+  <title>Document</title>
 </head>
+
 <body>
-    <header class="cabecalho-principal">
-        <div class="container">
-            <img src="" alt="Image" height="50" width="220"> 
-            <nav class="cabecalhoPrincipal-nav">
-              <a href="#">Salas</a>
-              <a href="#">Equipamentos</a>
-              <a href="#">Usuários</a>
-              <a href="#">Sair</a>
-            </nav>
+  <header class="cabecalho-principal">
+    <div class="container">
+      <img src="" alt="Image" height="50" width="220">
+      <nav class="cabecalhoPrincipal-nav">
+        <a href="#">Salas</a>
+        <a href="#">Equipamentos</a>
+        <a href="#">Usuários</a>
+       
+
+        <!-- FOTO DE PERFIL -->
+        <div class="usuario-logado" onclick="toggleDropdown()">
+          <img src="https://i.pravatar.cc/40?img=3" alt="Usuário" class="foto-perfil" />
+          <div class="dropdown-menu" id="dropdownMenu">
+            <a href="#">Sair</a>
           </div>
-    </header>
+
+
+      </nav>
+
+    </div>
+  </header>
+
+  <script>
+    function toggleDropdown() {
+      const menu = document.getElementById('dropdownMenu');
+      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
+
+    // Fecha o menu ao clicar fora
+    document.addEventListener('click', function (event) {
+      const dropdown = document.getElementById('dropdownMenu');
+      const usuario = document.querySelector('.usuario-logado');
+      if (!usuario.contains(event.target)) {
+        dropdown.style.display = 'none';
+      }
+    });
+  </script>
 </body>
+
 </html>
