@@ -1,0 +1,178 @@
+/*Importar uma fonte*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*
+body {
+    width: 100%;
+    background-color: #264e73;
+    color: #fff;
+}
+
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #1c1c1c, #2c2c2c);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/*Ao passar o mouse meu container da um "pulinho"*/
+.container:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+}
+
+
+/*section class login*/
+.login {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    margin-top: 10%;
+    border: solid 5px #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+/*brilho suave ao passar o mouse*/
+.animado:hover{
+    text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFA500;
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+.animado {
+    color: #FFD700;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 1.5px;
+    position: relative;
+    animation: aparecerDeslizar 1s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes aparecerDeslizar {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login h1 {
+    color: #FFD700;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    letter-spacing: 2px;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Brilho suave ao passar o mouse */
+.login h1:hover {
+    text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFA500;
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+/*margem do formulário*/
+.form {
+    margin-top: 30px;
+}
+
+/*classe item formatando input*/
+
+.item input {
+    width: 50%;
+    height: 5%;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border: none;
+    border-bottom: solid 1px #fff;
+    background-color: transparent;
+}
+
+.item ::placeholder {
+    color: #FFD700;
+}
+
+/*
+.btn_login{
+    width: 50%;
+    height: 3.3vw;
+    margin-top: 40px;
+    background: #FFD700;
+    font-size: 20px;
+    border-bottom: solid 1px #fff;
+}
+
+*/
+
+.btn_login {
+    background-color: #FFD700;
+    color: #222;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn_login::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: skewX(-20deg);
+    transition: 0.5s;
+}
+
+.btn_login:hover::before {
+    left: 100%;
+}
+
+.btn_login:hover {
+    background-color: #e6c200;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.btn_login:active {
+    transform: translateY(1px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
