@@ -15,6 +15,24 @@ API desenvolvida em ASP.NET Core com Entity Framework Core, utilizando autentica
 📦 CRUD completo com controller
 
 
+🎨 Ferramentas Utilizadas no Front-end
+
+React.js — construção da interface
+
+Vite — empacotador leve e rápido para projetos React
+
+Tailwind CSS — estilização responsiva e utilitária
+
+Axios — requisições HTTP com suporte a interceptadores
+
+React Router DOM — rotas públicas e protegidas
+
+JWT Storage — autenticação com armazenamento seguro de tokens
+
+Context API / Hooks — controle de estado global
+
+
+
 # ✅ Validações e Boas Práticas
 
 Anotações de validação como [Required], [StringLength], [Range]
