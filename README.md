@@ -14,7 +14,7 @@ API desenvolvida em ASP.NET Core com Entity Framework Core, utilizando autentica
 
 📦 CRUD completo com controller
 
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 🎨 Ferramentas Utilizadas no Front-end
 
 React.js — construção da interface
