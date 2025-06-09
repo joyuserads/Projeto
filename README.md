@@ -15,69 +15,89 @@ API desenvolvida em ASP.NET Core com Entity Framework Core, utilizando autentica
 📦 CRUD completo com controller
 
 
-✅ Validações
-Usando Data Annotations
+# ✅ Validações e Boas Práticas
 
-Mensagens de erro personalizadas
+Anotações de validação como [Required], [StringLength], [Range]
 
-Middleware para retornar erros de modelo com padrão JSON
+Hash de senha com SHA256 (sem armazenar a senha original)
 
-
-# 🔐 Autenticação com JWT
-Modelo de Usuario com campos:
-
--Id, Nome, Email, Senha (com hash), Papel (admin ou user)
-
--Registro e login via endpoint
-
--Token JWT com papel embutido no claim
-
--Filtro de autorização: apenas admin pode deletar produtos, por exemplo
+Uso de DTOs para separar modelos de entrada e saída (ex: ProdutoCreateDTO, ProdutoDTO)
 
 
-👨‍💼 Entidades do Modelo
+# 🔐 Autenticação e Acesso
 
-1. Usuario
+JWT com roles (admin, user)
 
-Campo
+[Authorize(Roles = "admin")] em endpoints protegid
 
-Tipo
+ # Diagrama de Relacionamentos
 
-Regras de Validação
+Usuario (N) ------ (1) TipoUsuario
 
-IdUsuario
+SalaEquipamento (N) ------ (1) Sala
+SalaEquipamento (N) ------ (1) Equipamento
 
-int
 
-Chave primária
+## ✨ Documentação da API - Controle de Salas e Equipamentos
 
-Nome
+### 📊 Visão Geral
 
-string
+API desenvolvida em ASP.NET Core com Entity Framework Core, utilizando autenticação JWT, Swagger, validações personalizadas e integração com SQL Server (SSMS).
 
-Obrigatório, mínimo 3 caracteres
+## 👨‍💼 Entidades do Modelo
 
-Email
+### 1. **Usuario**
 
-string
+| Campo         | Tipo   | Regras de Validação                  |
+| ------------- | ------ | ------------------------------------ |
+| IdUsuario     | int    | Chave primária                       |
+| Nome          | string | Obrigatório, mínimo 3 caracteres     |
+| Email         | string | Obrigatório, formato de email válido |
+| SenhaHash     | string | Gerado via SHA256                    |
+| IdTipoUsuario | int    | Obrigatório, FK para `TipoUsuario`   |
 
-Obrigatório, formato de email válido
+**Relacionamento:** Usuario → TipoUsuario (N:1)
 
-SenhaHash
+### 2. **TipoUsuario**
 
-string
+| Campo         | Tipo   | Regras de Validação                   |
+| ------------- | ------ | ------------------------------------- |
+| IdTipoUsuario | int    | Chave primária                        |
+| NomeTipo      | string | Obrigatório. Exemplo: `admin`, `user` |
 
-Gerado via SHA256 (senha original não armazenada)
+### 3. **Equipamento**
 
-IdTipoUsuario
+| Campo            | Tipo   | Regras de Validação                   |
+| ---------------- | ------ | ------------------------------------- |
+| IdEquipamento    | int    | Chave primária                        |
+| Nome             | string | Obrigatório, até 100 caracteres       |
+| Descricao        | string | Opcional, até 255 caracteres          |
+| NumeroPatrimonio | string | Obrigatório, único, até 50 caracteres |
 
-int
+### 4. **Sala**
 
-Obrigatório, FK para TipoUsuario
+| Campo       | Tipo   | Regras de Validação             |
+| ----------- | ------ | ------------------------------- |
+| IdSala      | int    | Chave primária                  |
+| NomeSala    | string | Obrigatório, até 100 caracteres |
+| Localizacao | string | Obrigatório, até 255 caracteres |
 
-Relacionamentos:
+### 5. **SalaEquipamento**
 
-Usuario pertence a TipoUsuario (N:1)
+| Campo             | Tipo     | Regras de Validação                                    |
+| ----------------- | -------- | ------------------------------------------------------ |
+| IdSalaEquipamento | int      | Chave primária                                         |
+| IdSala            | int      | Obrigatório, FK para `Sala`                            |
+| IdEquipamento     | int      | Obrigatório, FK para `Equipamento`                     |
+| DataAlocacao      | DateTime | Obrigatório, deve ser uma data igual ou maior que hoje |
+
+**Relacionamentos:**
+
+* SalaEquipamento → Sala (N:1)
+* SalaEquipamento → Equipamento (N:1)
+
+
+
 
 
 
