@@ -1,6 +1,9 @@
-# Projeto
 
-# API 
+
+# 📊 Visão Geral
+
+API desenvolvida em ASP.NET Core com Entity Framework Core, utilizando autenticação JWT, Swagger, validações personalizadas e integração com SQL Server (SSMS).
+
 💾 SQL Server (SSMS) com Entity Framework Core
 
 🔐 Endpoints de Autenticação com JWT
@@ -32,13 +35,50 @@ Modelo de Usuario com campos:
 -Filtro de autorização: apenas admin pode deletar produtos, por exemplo
 
 
-# ✅ Funcionalidades para Produto
+👨‍💼 Entidades do Modelo
 
-| Ação    | Endpoint                    | Acesso                  |
-| ------- | --------------------------- | ----------------------- |
-| Listar  | `GET /api/produtos`         | Público ✅ com paginação |
-| Buscar  | `GET /api/produtos/{id}`    | Público ✅               |
-| Criar   | `POST /api/produtos`        | Somente `admin` 🔒      |
-| Editar  | `PUT /api/produtos/{id}`    | Somente `admin` 🔒      |
-| Excluir | `DELETE /api/produtos/{id}` | Somente `admin` 🔒      |
+1. Usuario
+
+Campo
+
+Tipo
+
+Regras de Validação
+
+IdUsuario
+
+int
+
+Chave primária
+
+Nome
+
+string
+
+Obrigatório, mínimo 3 caracteres
+
+Email
+
+string
+
+Obrigatório, formato de email válido
+
+SenhaHash
+
+string
+
+Gerado via SHA256 (senha original não armazenada)
+
+IdTipoUsuario
+
+int
+
+Obrigatório, FK para TipoUsuario
+
+Relacionamentos:
+
+Usuario pertence a TipoUsuario (N:1)
+
+
+
 
