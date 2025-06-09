@@ -40,9 +40,6 @@ SalaEquipamento (N) ------ (1) Equipamento
 
 ## ✨ Documentação da API - Controle de Salas e Equipamentos
 
-### 📊 Visão Geral
-
-API desenvolvida em ASP.NET Core com Entity Framework Core, utilizando autenticação JWT, Swagger, validações personalizadas e integração com SQL Server (SSMS).
 
 ## 👨‍💼 Entidades do Modelo
 
