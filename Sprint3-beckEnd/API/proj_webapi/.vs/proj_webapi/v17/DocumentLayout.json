@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Joyce\\Desktop\\Projeto\\Sprint3-beckEnd\\API\\proj_webapi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Joyce\\Desktop\\Projeto\\Sprint3-beckEnd\\API\\proj_webapi\\proj_webapi\\Migrations\\20250612004119_FirstMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:proj_webapi\\Migrations\\20250612004119_FirstMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{311F8635-59A6-4BC4-88F3-1AE8A56FFC3A}|proj_webapi\\proj_webapi.csproj|c:\\users\\joyce\\desktop\\projeto\\sprint3-beckend\\api\\proj_webapi\\proj_webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{311F8635-59A6-4BC4-88F3-1AE8A56FFC3A}|proj_webapi\\proj_webapi.csproj|solutionrelative:proj_webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{311F8635-59A6-4BC4-88F3-1AE8A56FFC3A}|proj_webapi\\proj_webapi.csproj|c:\\users\\joyce\\desktop\\projeto\\sprint3-beckend\\api\\proj_webapi\\proj_webapi\\controllers\\salacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{311F8635-59A6-4BC4-88F3-1AE8A56FFC3A}|proj_webapi\\proj_webapi.csproj|solutionrelative:proj_webapi\\controllers\\salacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{311F8635-59A6-4BC4-88F3-1AE8A56FFC3A}|proj_webapi\\proj_webapi.csproj|c:\\users\\joyce\\desktop\\projeto\\sprint3-beckend\\api\\proj_webapi\\proj_webapi\\migrations\\20250612004119_firstmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{311F8635-59A6-4BC4-88F3-1AE8A56FFC3A}|proj_webapi\\proj_webapi.csproj|solutionrelative:proj_webapi\\migrations\\20250612004119_firstmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{311F8635-59A6-4BC4-88F3-1AE8A56FFC3A}|proj_webapi\\proj_webapi.csproj|c:\\users\\joyce\\desktop\\projeto\\sprint3-beckend\\api\\proj_webapi\\proj_webapi\\models\\sala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,11 +50,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "SalaController.cs",
+              "DocumentMoniker": "C:\\Users\\Joyce\\Desktop\\Projeto\\Sprint3-beckEnd\\API\\proj_webapi\\proj_webapi\\Controllers\\SalaController.cs",
+              "RelativeDocumentMoniker": "proj_webapi\\Controllers\\SalaController.cs",
+              "ToolTip": "C:\\Users\\Joyce\\Desktop\\Projeto\\Sprint3-beckEnd\\API\\proj_webapi\\proj_webapi\\Controllers\\SalaController.cs",
+              "RelativeToolTip": "proj_webapi\\Controllers\\SalaController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwB8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T00:45:09.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "20250612004119_FirstMigration.cs",
               "DocumentMoniker": "C:\\Users\\Joyce\\Desktop\\Projeto\\Sprint3-beckEnd\\API\\proj_webapi\\proj_webapi\\Migrations\\20250612004119_FirstMigration.cs",
               "RelativeDocumentMoniker": "proj_webapi\\Migrations\\20250612004119_FirstMigration.cs",
@@ -63,20 +80,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Joyce\\Desktop\\Projeto\\Sprint3-beckEnd\\API\\proj_webapi\\proj_webapi\\Program.cs",
               "RelativeDocumentMoniker": "proj_webapi\\Program.cs",
               "ToolTip": "C:\\Users\\Joyce\\Desktop\\Projeto\\Sprint3-beckEnd\\API\\proj_webapi\\proj_webapi\\Program.cs",
               "RelativeToolTip": "proj_webapi\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-12T00:24:10.197Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Joyce\\Desktop\\Projeto\\Sprint3-beckEnd\\API\\proj_webapi\\proj_webapi\\appsettings.json",
               "RelativeDocumentMoniker": "proj_webapi\\appsettings.json",
@@ -89,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "SalaEquipamento.cs",
               "DocumentMoniker": "C:\\Users\\Joyce\\Desktop\\Projeto\\Sprint3-beckEnd\\API\\proj_webapi\\proj_webapi\\Models\\SalaEquipamento.cs",
               "RelativeDocumentMoniker": "proj_webapi\\Models\\SalaEquipamento.cs",
@@ -102,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "TipoUsuario.cs",
               "DocumentMoniker": "C:\\Users\\Joyce\\Desktop\\Projeto\\Sprint3-beckEnd\\API\\proj_webapi\\proj_webapi\\Models\\TipoUsuario.cs",
               "RelativeDocumentMoniker": "proj_webapi\\Models\\TipoUsuario.cs",
@@ -115,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\Joyce\\Desktop\\Projeto\\Sprint3-beckEnd\\API\\proj_webapi\\proj_webapi\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "proj_webapi\\Models\\Usuario.cs",
@@ -128,7 +145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Equipamento.cs",
               "DocumentMoniker": "C:\\Users\\Joyce\\Desktop\\Projeto\\Sprint3-beckEnd\\API\\proj_webapi\\proj_webapi\\Models\\Equipamento.cs",
               "RelativeDocumentMoniker": "proj_webapi\\Models\\Equipamento.cs",
@@ -141,7 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Sala.cs",
               "DocumentMoniker": "C:\\Users\\Joyce\\Desktop\\Projeto\\Sprint3-beckEnd\\API\\proj_webapi\\proj_webapi\\Models\\Sala.cs",
               "RelativeDocumentMoniker": "proj_webapi\\Models\\Sala.cs",
@@ -154,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Joyce\\Desktop\\Projeto\\Sprint3-beckEnd\\API\\proj_webapi\\proj_webapi\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "proj_webapi\\Data\\AppDbContext.cs",

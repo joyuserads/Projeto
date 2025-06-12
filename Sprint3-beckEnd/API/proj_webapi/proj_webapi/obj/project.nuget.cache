@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+A/m4Flfw3A=",
+  "dgSpecHash": "s9D38oqrd9E=",
   "success": true,
   "projectFilePath": "C:\\Users\\Joyce\\Desktop\\Projeto\\Sprint3-beckEnd\\API\\proj_webapi\\proj_webapi\\proj_webapi.csproj",
   "expectedPackageFiles": [
@@ -51,6 +51,7 @@
     "C:\\Users\\Joyce\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\Joyce\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\Joyce\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
+    "C:\\Users\\Joyce\\.nuget\\packages\\scalar.aspnetcore\\2.4.13\\scalar.aspnetcore.2.4.13.nupkg.sha512",
     "C:\\Users\\Joyce\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",
     "C:\\Users\\Joyce\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
     "C:\\Users\\Joyce\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",

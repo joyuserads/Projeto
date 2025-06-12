@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using proj_webapi.Data;
+using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +22,7 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    app.MapScalarApiReference(); // para utiliza scalar para teste
     app.MapOpenApi();
 }
 

@@ -162,3 +162,4 @@ C:\Users\Joyce\Desktop\Projeto\Sprint3-beckEnd\API\proj_webapi\proj_webapi\obj\D
 C:\Users\Joyce\Desktop\Projeto\Sprint3-beckEnd\API\proj_webapi\proj_webapi\obj\Debug\net9.0\proj_webapi.pdb
 C:\Users\Joyce\Desktop\Projeto\Sprint3-beckEnd\API\proj_webapi\proj_webapi\obj\Debug\net9.0\proj_webapi.genruntimeconfig.cache
 C:\Users\Joyce\Desktop\Projeto\Sprint3-beckEnd\API\proj_webapi\proj_webapi\obj\Debug\net9.0\ref\proj_webapi.dll
+C:\Users\Joyce\Desktop\Projeto\Sprint3-beckEnd\API\proj_webapi\proj_webapi\bin\Debug\net9.0\Scalar.AspNetCore.dll
