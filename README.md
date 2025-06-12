@@ -2,7 +2,7 @@
 
 # 📊 Visão Geral
 
-API desenvolvida em ASP.NET Core com Entity Framework Core, utilizando autenticação JWT, Swagger, validações personalizadas e integração com SQL Server (SSMS).
+API desenvolvida em ASP.NET 9 Core com Entity Framework Core, utilizando autenticação JWT, Swagger, validações personalizadas e integração com SQL Server (SSMS).
 
 💾 SQL Server (SSMS) com Entity Framework Core
 
@@ -10,7 +10,7 @@ API desenvolvida em ASP.NET Core com Entity Framework Core, utilizando autentica
 
 ✅ Validações com mensagens customizadas
 
-📘 Swagger para testes
+📘 Scalar para testes
 
 📦 CRUD completo com controller
 
