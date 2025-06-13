@@ -12,7 +12,7 @@ namespace proj_webapi.Models
         public string Marca { get; set; } = string.Empty;
         public string TipoEquipamento { get; set; } = string.Empty;
         public string Descricao { get; set; } = string.Empty;
-        public string numeroPatrimonio { get; set; } = string.Empty;
+        public string NumeroPatrimonio { get; set; } = string.Empty;
 
         // bool representa um valor lógico (true ou false)
         public bool Disponivel { get; set; }
