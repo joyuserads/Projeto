@@ -17,24 +17,42 @@ function Login() {
         email: email,
         senha: senha,
       })
-      .then((resposta) => {
-        if (resposta.status === 200) {
-          localStorage.setItem('usuario-login', resposta.data.token);
-          console.log('Token : ' + resposta.data.token);
-          console.log(parseJwt());
+       .then(resposta => {
+            if(resposta.status === 200){
+                localStorage.setItem("usuario-login", resposta.data.token)
+                console.log('Token : '+ resposta.data.token)
+                console.log(parseJwt())
 
-          const role = parseJwt().role;
-          if (role === '1') {
-            navigate('/cadastrarusuario'); // <-- atualizado
-          } else if (role === '2') {
-            navigate('/cadastrarequipamento'); // <-- atualizado
-          }
-        }
-      })
-      .catch((erro) => {
-        console.log(erro);
-      });
+                if(parseJwt().role === "1"){
+                    navigate('/app')
+                } else if(parseJwt().role === "2"){
+                    navigate('/app')
+                }
+
+                
+               
+            }
+        })
+        .catch(erro => {
+            console.log(erro)
+        })
+      /*.then((resposta) => {
+    console.log('Resposta recebida:', resposta);
+  })
+  .catch((erro) => {
+    console.error('Erro ao fazer login:', erro.message);
+    if (erro.response) {
+      console.log('Status:', erro.response.status);
+      console.log('Data:', erro.response.data);
+    } else if (erro.request) {
+      console.log('Erro na requisição: Sem resposta da API');
+    } else {
+      console.log('Erro ao configurar a requisição:', erro.message);
+    }
+  }); */
   }
+   
+  
 
   return (
     <div className="bodyLgn">
@@ -44,7 +62,7 @@ function Login() {
 
       <main>
         <section className="login ">
-           <h3 class="animado">Andreozzis</h3>
+           <h3 className="animado">Andreozzis</h3>
           <h1>LOGIN</h1>
           <form onSubmit={efetuaLogin} className="form">
             <div className="item">
@@ -68,7 +86,8 @@ function Login() {
             </div>
 
             <div className="item">
-              <button className="btn_login" type="submit">
+              <button className="btn_login" id="btnLogin" type="submit">
+                
                 Login
               </button>
             </div>
