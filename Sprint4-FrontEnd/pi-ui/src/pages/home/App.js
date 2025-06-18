@@ -1,23 +1,22 @@
 import { useState, useEffect } from 'react';
 import './App.css';
+import Header from '../../components/header/header';
+
+import axios from 'axios';
+import { Helmet } from 'react-helmet-async';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-       
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+        <Helmet>
+          <title>SM - Home</title>
+        </Helmet>
+        <Header />
+
+     
     </div>
   );
 }

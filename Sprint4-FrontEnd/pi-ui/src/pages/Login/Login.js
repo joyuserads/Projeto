@@ -2,8 +2,8 @@ import { useState } from 'react';
 import axios from 'axios';
 import { parseJwt } from '../../services/auth';
 import { useNavigate } from 'react-router-dom'; // <-- atualizado
-
-import Helmet from 'react-helmet';
+import './login.css';
+import { Helmet } from 'react-helmet-async';
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -13,7 +13,7 @@ function Login() {
   function efetuaLogin(event) {
     event.preventDefault();
     axios
-      .post('http://localhost:5000/api/login', {
+      .post('https://localhost:7260/api/Usuario', {
         email: email,
         senha: senha,
       })
@@ -43,7 +43,8 @@ function Login() {
       </Helmet>
 
       <main>
-        <section className="login">
+        <section className="login ">
+           <h3 class="animado">Andreozzis</h3>
           <h1>LOGIN</h1>
           <form onSubmit={efetuaLogin} className="form">
             <div className="item">
