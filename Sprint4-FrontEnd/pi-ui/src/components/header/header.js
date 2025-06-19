@@ -1,6 +1,7 @@
 import './header.css';
 import { Link, useNavigate } from 'react-router-dom';
 
+
 function Header() {
   const navigate = useNavigate();
 
@@ -17,7 +18,7 @@ function Header() {
           <Link to="/cadastrarequipamento">Equipamentos</Link>
           <Link to="/cadastrarusuario">Usuários</Link>
           <button onClick={handleLogout} style={{ background: 'none', border: 'none', color: '#333', cursor: 'pointer' }}>
-            Sair
+            <h3>Sair</h3>
           </button>
         </nav>
       </div>

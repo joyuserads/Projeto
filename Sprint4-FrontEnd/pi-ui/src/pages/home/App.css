@@ -1,7 +1,16 @@
 .App {
-  text-align: center;
-}
 
+  text-align: center;
+  background-color: bisque;
+  
+}
+.Tabela{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 30vh;
+  color: #0a0a01;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,7 +23,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #a89213;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,6 +35,10 @@
 
 .App-link {
   color: #61dafb;
+}
+.th-h{
+  font-size: calc(10px + 2vmin);
+  color: #96810d;
 }
 
 @keyframes App-logo-spin {
