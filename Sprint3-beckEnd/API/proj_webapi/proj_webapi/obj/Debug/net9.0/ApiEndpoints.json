@@ -457,7 +457,7 @@
   },
   {
     "ContainingType": "proj_webapi.Controllers.UsuarioController",
-    "Method": "Create",
+    "Method": "Login",
     "RelativePath": "api/Usuario",
     "HttpMethod": "POST",
     "IsController": true,
@@ -469,17 +469,7 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "proj_webapi.Models.Usuario",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "proj_webapi.Controllers.UsuarioController",

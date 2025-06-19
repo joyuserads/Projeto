@@ -1,6 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using proj_webapi.Data;
 using proj_webapi.Models;
 
@@ -52,18 +56,40 @@ namespace proj_webapi.Controllers
 
         // POST: api/Usuario
         [HttpPost] // Mapeia requisições HTTP POST
-        public ActionResult<Usuario> Create([FromBody] Usuario usuario)
+        public IActionResult Login( Usuario usuario)
         {
-            if (!ModelState.IsValid)                            // Verifica se o modelo é válido
-                return BadRequest(ModelState);                  // Retorna status 400 se inválido
+            // Verifica se o usuário existe no banco
+            var usuarios = _context.Usuarios.FirstOrDefault(u => u.Email == usuario.Email && u.Senha == usuario.Senha);
 
-            _context.Usuarios.Add(usuario);                       // Adiciona o usuário no contexto
-            _context.SaveChanges();                             // Salva no banco de dados
+            if (usuarios == null )
+            {
+                return Unauthorized("E-mail ou senha inválidos!");
+            }
 
-            return CreatedAtAction(                             // Retorna status 201 Created
-                nameof(GetUsuarioById),                                // Define a rota do novo recurso
-                new { id = usuario.IdUsuario },                   // Passa o ID criado
-                usuario);                                         // Retorna o objeto criado
+            // Cria o TOKEN
+            var claims = new[]
+            {
+                new Claim(JwtRegisteredClaimNames.Email, usuarios.Email),
+                new Claim(ClaimTypes.Role, usuarios.IdTipoUsuario.ToString()),
+                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+            };
+
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("minha_chave_super_secreta_que_tem_32_ou_mais_chars"));
+            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+
+            var token = new JwtSecurityToken(
+                issuer: "webapi",
+                audience: "webapi",
+                claims: claims,
+                expires: DateTime.Now.AddHours(2),
+                signingCredentials: creds
+            );
+
+            return Ok(new
+            {
+                token = new JwtSecurityTokenHandler().WriteToken(token)
+            });
         }
 
         // PUT: api/Usuario/5
