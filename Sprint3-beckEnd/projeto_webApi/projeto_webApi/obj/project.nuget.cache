@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8B75oN0EU98=",
+  "dgSpecHash": "sAC7kKGkUAc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Joyce\\Desktop\\Projeto\\Sprint3-beckEnd\\API\\projeto_webApi\\projeto_webApi\\projeto_webApi.csproj",
+  "projectFilePath": "C:\\Users\\Joyce\\Desktop\\Projeto\\Sprint3-beckEnd\\projeto_webApi\\projeto_webApi\\projeto_webApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Joyce\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Joyce\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

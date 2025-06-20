@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Joyce\\Desktop\\Projeto\\Sprint3-beckEnd\\API\\projeto_webApi\\projeto_webApi\\projeto_webApi.csproj": {}
+    "C:\\Users\\Joyce\\Desktop\\Projeto\\Sprint3-beckEnd\\projeto_webApi\\projeto_webApi\\projeto_webApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Joyce\\Desktop\\Projeto\\Sprint3-beckEnd\\API\\projeto_webApi\\projeto_webApi\\projeto_webApi.csproj": {
+    "C:\\Users\\Joyce\\Desktop\\Projeto\\Sprint3-beckEnd\\projeto_webApi\\projeto_webApi\\projeto_webApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Joyce\\Desktop\\Projeto\\Sprint3-beckEnd\\API\\projeto_webApi\\projeto_webApi\\projeto_webApi.csproj",
+        "projectUniqueName": "C:\\Users\\Joyce\\Desktop\\Projeto\\Sprint3-beckEnd\\projeto_webApi\\projeto_webApi\\projeto_webApi.csproj",
         "projectName": "projeto_webApi",
-        "projectPath": "C:\\Users\\Joyce\\Desktop\\Projeto\\Sprint3-beckEnd\\API\\projeto_webApi\\projeto_webApi\\projeto_webApi.csproj",
+        "projectPath": "C:\\Users\\Joyce\\Desktop\\Projeto\\Sprint3-beckEnd\\projeto_webApi\\projeto_webApi\\projeto_webApi.csproj",
         "packagesPath": "C:\\Users\\Joyce\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Joyce\\Desktop\\Projeto\\Sprint3-beckEnd\\API\\projeto_webApi\\projeto_webApi\\obj\\",
+        "outputPath": "C:\\Users\\Joyce\\Desktop\\Projeto\\Sprint3-beckEnd\\projeto_webApi\\projeto_webApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

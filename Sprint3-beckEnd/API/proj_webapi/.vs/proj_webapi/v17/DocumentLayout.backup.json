@@ -42,8 +42,7 @@
               "RelativeToolTip": "proj_webapi\\Program.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAAADUAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T18:49:22.916Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T18:49:22.916Z"
             },
             {
               "$type": "Document",
@@ -55,8 +54,7 @@
               "RelativeToolTip": "proj_webapi\\Models\\Usuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T02:00:56.861Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-13T02:00:56.861Z"
             },
             {
               "$type": "Document",
@@ -64,8 +62,8 @@
               "Title": "UsuarioController.cs",
               "DocumentMoniker": "C:\\Users\\Joyce\\Desktop\\Projeto\\Sprint3-beckEnd\\API\\proj_webapi\\proj_webapi\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "proj_webapi\\Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\Joyce\\Desktop\\Projeto\\Sprint3-beckEnd\\API\\proj_webapi\\proj_webapi\\Controllers\\UsuarioController.cs*",
-              "RelativeToolTip": "proj_webapi\\Controllers\\UsuarioController.cs*",
+              "ToolTip": "C:\\Users\\Joyce\\Desktop\\Projeto\\Sprint3-beckEnd\\API\\proj_webapi\\proj_webapi\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "proj_webapi\\Controllers\\UsuarioController.cs",
               "ViewState": "AgIAAEwAAAAAAAAAAAAqwE0AAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-13T02:01:25.927Z",
@@ -81,8 +79,7 @@
               "RelativeToolTip": "proj_webapi\\Controllers\\TipoUsuarioController.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAAwBkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T01:29:59.48Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-13T01:29:59.48Z"
             },
             {
               "$type": "Document",
@@ -94,8 +91,7 @@
               "RelativeToolTip": "proj_webapi\\Models\\TipoUsuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T01:28:00.842Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-13T01:28:00.842Z"
             }
           ]
         }
