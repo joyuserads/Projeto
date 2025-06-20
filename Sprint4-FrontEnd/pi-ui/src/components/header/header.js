@@ -14,8 +14,9 @@ function Header() {
     <header className="cab-principal">
       <div className="container">
         <nav className="cab-Principal-nav">
+          <Link to="/app">Home</Link>
           <Link to="/cadastrarsala">Salas</Link>
-          <Link to="/cadastrarequipamento">Equipamentos</Link>
+          <Link to="/equipamento">Equipamentos</Link>
           <Link to="/cadastrarusuario">Usuários</Link>
           <button onClick={handleLogout} style={{ background: 'none', border: 'none', color: '#333', cursor: 'pointer' }}>
             <h3>Sair</h3>

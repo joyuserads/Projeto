@@ -24,7 +24,7 @@ function Login() {
                 console.log(parseJwt())
 
                 if(parseJwt().role === "1"){
-                    navigate('/app')
+                    navigate('/equipamento')
                 } else if(parseJwt().role === "2"){
                     navigate('/app')
                 }

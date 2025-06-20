@@ -1,7 +1,24 @@
 export const parseJwt = () => {
-    let base64 = localStorage.getItem('usuario-login').split('.')[1]
+  const token = localStorage.getItem('usuario-login');
+  if (!token) return null;
 
-    return JSON.parse(window.atob(base64))
-}
+  try {
+    const base64Url = token.split('.')[1];
+    if (!base64Url) return null;
 
-export const usuarioAutenticado = () => localStorage.getItem('usuario-login') !== null;
+    const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+    const payload = JSON.parse(window.atob(base64));
+
+    // Mapeia a role para payload.role
+    payload.role = payload["http://schemas.microsoft.com/ws/2008/06/identity/claims/role"];
+
+    return payload;
+  } catch (error) {
+    console.error("Erro ao decodificar token:", error);
+    return null;
+  }
+};
+
+
+export const usuarioAutenticado = () =>
+  localStorage.getItem('usuario-login') !== null;
