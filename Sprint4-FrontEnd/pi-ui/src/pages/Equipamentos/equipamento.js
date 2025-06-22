@@ -137,32 +137,82 @@ function Equipamento() {
                                 <option value="Eletroeletrônica">Eletroeletrônica</option>
                                 <option value="Mobiliário">Mobiliário</option>
                             </select>
-                            <input type="text" value={marca} onChange={(event) => setMarca(event.target.value)} name="marca" placeholder="Marca" class="input watermark" required />
+                            <input type="text" value={marca} onChange={(event) => setMarca(event.target.value)} name="marca" placeholder="Marca" className="input watermark" required />
                         </div>
 
 
                         <div className="grid_1">
 
-                            <input type="number" minLength="10" name="numeroPatrimonio" value={numeroPatrimonio} placeholder="Nº de Patrimonio" onChange={(event) => setNumeroPatrimonio(event.target.value)} class="input watermark" required />
+                            <input type="number" minLength="10" name="numeroPatrimonio" value={numeroPatrimonio} placeholder="Nº de Patrimonio" onChange={(event) => setNumeroPatrimonio(event.target.value)} className="input watermark" required />
 
                         </div>
-                         <p className="title-descricao">Descrição:</p>
-                        <input type="text" value={descricao} className="descricao" onChange={(event) => setDescricao(event.target.value)} name="descricao" required/>
+                        <p className="title-descricao">Descrição:</p>
+                        <input type="text" value={descricao} className="descricao" onChange={(event) => setDescricao(event.target.value)} name="descricao" required />
 
-                         <h2>Estado</h2>
+                        <h2>Estado</h2>
 
-                         <div className="coluna">
+                        <div className="coluna">
                             <div className="coluna2">
-                                <input type="checkbox" value={true} onChange={(event) => setDisponivel (event.target.value)} name="disponivel" id="estado" /> 
-                                 <label for="estado">Ativo</label>
+                                <input type="checkbox" value={true} onChange={(event) => setDisponivel(event.target.value)} name="disponivel" id="estado" />
+                                <label for="estado">Ativo</label>
                             </div>
-                             <div className="coluna2">
-                                <input type="checkbox" value={false} onChange={(event) => setDisponivel (event.target.value)} name="disponivel" id="estado" /> 
-                                 <label for="estado">Inativo</label>
+                            <div className="coluna2">
+                                <input type="checkbox" value={false} onChange={(event) => setDisponivel(event.target.value)} name="disponivel" id="estado" />
+                                <label for="estado">Inativo</label>
                             </div>
+                        </div>
 
-                         </div>
+                        <div className="grid_1" id="botao">
+                            {/* Botão com classe "btn-cad" */}
+                            {/* O botão fica desabilitado quando a variável 'descricao' estiver vazia */}
+                            {/* disabled recebe um booleano: true se descricao for vazia, false caso contrário */}
+                            <button className="btn-cad" disabled={descricao === ''} type="submit">
+                                {
+                                    // Se idEquipamento for zero, exibe "Cadastrar"
+                                    // Caso contrário, exibe "Atualizar"
+                                    idEquipamento === 0 ? 'Cadastrar' : 'Atualizar'
+                                }
+                            </button>
+                            <button className="clean" disabled={idEquipamento === 0 ? true : false} onClick={limparCampos}>Limpar</button>
+                        </div>
                     </form>
+                </section>
+
+                {/*Section TABELA*/}
+                <section className="Tabela">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th className="th-h">Marca</th>
+                                <th className="th-h">Tipo</th>
+                                <th className="th-h">Descrição</th>
+                                <th className="th-h">Numero de Patrimonio</th>
+                                <th className="th-h">Diponivel</th>
+                                <th style={{ width: "100px" }} className="td-h">Ações</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            {
+                                listaEquipamentos.map(equipamento => {
+                                    return (
+                                        <tr key={equipamento.idEquipamento}>
+                                            <th>{equipamento.marca} </th>
+                                            <th>{equipamento.tipoEquipamento}</th>
+                                            <th>{equipamento.descricao}</th>
+                                            <th>{equipamento.numeroPatrimonio}</th>
+                                            <th>{
+                                                equipamento.disponivel ? "Ativo" : "Inativo"
+                                            }
+                                            </th>
+                                            <button className="btnt-ed" onClick={() => buscarIdEquipamentos(equipamento)}>Editar</button>
+                                            <button className="btnt-ex" onClick={() => excluirEquipamento(equipamento)}>Excluir</button>
+                                        </tr>
+                                    )
+                                })
+                            }
+                        </tbody>
+                    </table>
                 </section>
             </main>
         </div>
