@@ -39,8 +39,6 @@ Anotações de validação como [Required], [StringLength], [Range]
 
 Hash de senha com SHA256 (sem armazenar a senha original)
 
-Uso de DTOs para separar modelos de entrada e saída (ex: ProdutoCreateDTO, ProdutoDTO)
-
 
 # 🔐 Autenticação e Acesso
 
